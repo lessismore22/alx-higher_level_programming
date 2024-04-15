@@ -1,3 +1,3 @@
 #!/usr/bin/node
 
-let x = "c" + "is 
+console.log(process.argv[2] + ' is ' + process.argv[3]);
