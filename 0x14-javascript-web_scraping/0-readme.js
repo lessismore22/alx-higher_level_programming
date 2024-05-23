@@ -5,12 +5,12 @@
  *
 */
 const fs = require('fs');
-const filename = process.argv[2];
 
-fs.readfile(filename, 'utf-8', (error, content) => {
-	if (error) {
-	  console.log(error);
-	} else {
-	  console.log(data.toString('utf-8'));
-	}
-      });	
+const filePath = process.argv[2];
+const str = process.argv[3];
+
+fs.writeFile(filePath, str, 'utf-8', (err) => {
+  if (err) {
+    console.log(err);
+  }
+});	
