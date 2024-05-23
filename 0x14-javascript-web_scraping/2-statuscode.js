@@ -3,9 +3,9 @@
 const request = require('request');
 const url = process.argv[2];
 
-request.get(url, (error, response) => {
-	if(error) {
-		console.log(error);
+request.get(url, (err, response, body) => {
+	if(err) {
+		console.log(err);
 	} else {
 		console.log(`code: ${response.statusCode}`);
  	}
