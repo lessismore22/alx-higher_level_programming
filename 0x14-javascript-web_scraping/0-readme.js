@@ -1,5 +1,9 @@
 #!/usr/bin/node
 
+/**
+ * this module writes to a file
+ *
+*/
 const fs = require('fs');
 const filename = process.argv[2];
 
